@@ -436,3 +436,14 @@
     max-height: 55vh;
   }
 }
+
+
+.brands {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.brands-img {
+  max-width: 90%;   /* se adapta al ancho de la pantalla */
+  height: auto;
+}
