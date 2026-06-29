@@ -3,118 +3,600 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Computechh | Tienda de cómputo</title>
+  <title>Computechh | Tienda de cómputo </title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  
-  <!-- Header -->
-  <header class="site-header">
-    <div class="logo">Computechh</div>
 
-    <!-- Botón hamburguesa SIN JS -->
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menú" />
-    <label for="nav-toggle" class="nav-toggle-btn" aria-hidden="true">
-      <span></span><span></span><span></span>
-    </label>
+     
+
+ <!-- ===== TOP BAR ===== -->
+<div class="top-bar" id="topbar">
+  <div class="logo"><a href="index.html">Computechh</a></div>
+
+  <div class="search-container">
+    <button id="search-toggle" class="search-icon">
+      <i class="fas fa-search"></i>
+    </button>
 
     <div class="search-bar">
-      <input type="text" placeholder="Buscar productos...">
-      <button type="submit">🔍</button>
+      <input type="text" placeholder="Buscar productos..."id="search-inpu">
+      <button id="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+  </div>
+
+  <div class="hamburger" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+</div>
+
+<!-- ===== MENÚ DESPLEGABLE ===== -->
+<nav class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="Ofertas.html">Ofertas</a></li>                     
+    <li><a href="nosotros.html">Nosotros</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+
+<!-- ===== NAV BAR MODO ESCRITORIO ===== -->
+<nav class="nav-bar" id="navbar">
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="Ofertas.html">Ofertas</a></li>                     
+    <li><a href="nosotros.html">Nosotros</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+
+
+    <!-- ===== BANNER ===== -->
+     <div class="banner-wrapper">
+    <section class="banner">
+      <div class="banner-slide">
+        <img src="img/banner1.png" alt="Banner 1">
+        <img src="img/banner2.png" alt="Banner 2">
+        <img src="img/banner3.png" alt="Banner 3">
+      </div>
+      <a class="banner-prev">&#10094;</a>
+      <a class="banner-next">&#10095;</a>
+    </section>
+    </div>
+    
+
+    <!-- MARQUESINA COMPUTECHH -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Computechh| Equipate con nosotros| Servicio a Domicilio | ¡Últimas piezas! | </span>
+    <!-- 👇 Clonamos el texto para que el movimiento sea continuo -->
+    <span>Computechh | Paga menos por mas | Servicio a Domicilio | ¡Últimas piezas! | </span>
+    <span>Computechh | Equipate con nosotros| Servicio a Domicilio | ¡Últimas piezas! | </span>
+    <span>Computechh | Paga menos por mas | Servicio a Domicilio | ¡Últimas piezas! | </span>
+  </div>
+</div>
+
+
+<section class="about fade-in ocultar-en-busqueda">
+  <div class="about-container">
+    
+    <!-- Imagen -->
+    <div class="about-img">
+      <img src="img/negocio.png" alt="Negocio Computechh">
     </div>
 
-    <nav class="nav">
-      <a href="#inicio">Inicio</a>
-      <a href="#productos">Productos</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <section id="inicio" class="hero" aria-label="Presentación">
-
-    <!-- Carrusel lateral izquierdo (2 imágenes) -->
-    <aside class="hero-left-rotator" aria-hidden="true">
-      <figure class="side-slide s1">
-        <img src="img/paqueteria.jpg" alt="Entrega de paquetería">
-      </figure>
-      <figure class="side-slide s2">
-        <img src="img/celular.jpg" alt="Contáctanos por inbox">
-      </figure>
-    </aside>
-
-    <div class="hero-content">
-      <h1 class="hero-title">Bienvenido a <span>ComPutechh</span></h1>
-      <p class="subtexto">
-        Somos una tienda virtual, dedicada a la venta de equipos de cómputo desde hace más de 25 años,
-        tenemos los mejores equipos reacondicionados, al mejor precio y la mejor calidad, contamos con amplio inventario,
-        te llevarás una grata experiencia navegando por nuestra página ya que aquí encontrarás el equipo ideal para ti o para los tuyos.
-        Nuestros equipos harán más fácil tu vida laboral o personal. Estamos comprometidos contigo, ¡Muchas gracias!  
-        Te deseamos la mejor de las experiencias visitando nuestro sitio.
+    <!-- Texto -->
+    <div class="about-text">
+      <h2>Tu mejor opción en equipos de cómputo</h2>
+      <p>
+        En Computechh nos especializamos en ofrecerte equipos de cómputo de alta calidad al mejor precio del mercado.
       </p>
-
-      <!-- ⬇️ MOVIDO AQUÍ: Imagen de fondo SOLO del título y subtexto -->
-      <div class="hero-image">
-        <img src="img/rack-laptops.png" alt="Rack de laptops apiladas" />
-      </div>
-      <!-- ⬆️ Queda detrás del hero-title y subtexto, no del resto -->
+      <p>
+        Contamos con una amplia variedad de laptops, accesorios y componentes para que encuentres justo lo que necesitas.
+      </p>
+      
     </div>
 
-    <!-- Imagen fija derecha -->
-    <figure class="hero-right-photo">
-      <img src="img/GALERIA.png" alt="Inventario de laptops">
-    </figure>
-  </section>
+  </div>
+</section>
 
-  <!-- Promo -->
+<!-- ===== SECCIÓN DE PRODUCTOS ===== -->
+<section class="productos">
+
+  <div class="titulo-seccion ocultable">
+
+  <svg class="icono-cat" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <rect x="3" y="5" width="18" height="12" rx="2"/>
+    <path d="M2 19h20"/>
+  </svg>
+
+  <span>LAPTOPS</span>
+
+</div>
+  
+  <div class="product-gallery">
+
+    <div class="nuevo-card fade-scroll">        
+
+  <!-- IMAGEN -->
+  <a href="HP Laptop 17.3 i5 11a Gen Ram 12GB 256GB SSD+1TB Win11.html">
+    <img src="laptop/HP Laptop 17.3 i5 11a Gen Ram 12GB 256GB SSD+1TB Win11/lap1.png" alt="Laptop" class="card-img">
+  </a>
+
+  <!-- INFO -->
+  <div class="card-info"> 
+
+    <!-- BOTÓN ARRIBA -->
+    <a 
+      href="https://wa.me/526621838339?text=Hola,%20estoy%20interesado%20Laptop Lenovo Thinkpad T14 Core I7 11va." 
+      target="_blank" 
+      class="btn-top">
+      Comprar ahora
+    </a>
+
+    <!-- TITULO -->
+    <h3 class="titulo-producto">Laptop Lenovo</h3>
+    <h2 class="modelo-producto">Thinkpad T14</h2>
+
+    <!-- SPECS -->
+    <ul class="specs">
+      <li><i class="fas fa-microchip"></i> Intel Core i7 11va</li>
+      <li><i class="fas fa-memory"></i> 16GB RAM</li>
+      <li><i class="fas fa-hdd"></i> 256GB SSD NVMe</li>
+      <li><i class="fab fa-windows"></i> Windows 11 Pro</li>
+    </ul>
+
+    <!-- PRECIO + BOTÓN -->
+    <div class="card-bottom">
+      <p class="precio">$5,800</p>
+
+      <a href="Laptop Lenovo Thinkpad T14 Core I7 11va.html" class="btn-detalles">
+        Ver detalles →
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+
+    <div class="nuevo-card fade-scroll">        
+
+  <!-- IMAGEN IZQUIERDA -->
+  <a href="Laptop Lenovo Thinkpad T480s Core I5 8va.html">
+    <img src="laptop/Laptop Lenovo Thinkpad T480s Core I5 8va/lap1.webp" alt="Laptop" class="card-img">
+  </a>
+
+  <!-- CONTENEDOR DERECHO -->
+  <div class="card-info"> 
+
+    <a 
+      href="https://wa.me/526621838339?text=Hola,%20estoy%20interesado%20Laptop Lenovo Thinkpad T480s Core I5 8va." 
+      target="_blank" 
+      class="btn-top">
+      Comprar ahora
+    </a>
+
+    <!-- TITULO -->
+    <h3 class="titulo-producto">Laptop Lenovo</h3>
+    <h2 class="modelo-producto">Thinkpad T14</h2>
+
+    <!-- SPECS -->
+    <ul class="specs">
+      <li><i class="fas fa-microchip"></i> Intel Core i7 11va</li>
+      <li><i class="fas fa-memory"></i> 16GB RAM</li>
+      <li><i class="fas fa-hdd"></i> 256GB SSD NVMe</li>
+      <li><i class="fab fa-windows"></i> Windows 11 Pro</li>
+    </ul>
+
+    <!-- PRECIO + BOTÓN -->
+    <div class="card-bottom">
+  <p class="precio">$5,800</p>
+
+  <a href="Laptop Lenovo Thinkpad T490 Core I7 10va.html" class="btn-detalles">
+    Ver detalles →
+  </a>
+</div>
+    </div>
+
+  </div>
+
+</div>
+
+  <!-- CONTENEDOR DERECHO -->
+  <div class="card-info"> 
+
+    <a 
+      href="https://wa.me/526621838339?text=Hola,%20estoy%20interesado%20Laptop Lenovo Thinkpad T490 Core I7 10va." 
+      target="_blank" 
+      class="btn-whatsapp-top">
+      Comprar ahora
+    </a>
+
+    <p class="descripcion-corta">Laptop Lenovo Thinkpad T490 Core I7 10va — Memoria Ram 16GB — Touch — Windows 11 Pro </p>
+
+    <p class="precio-rojo">$6,500</p>
+
+  </div>
+
+</div>
+
+    <div class="nuevo-card fade-scroll">        
+
+  <!-- IMAGEN IZQUIERDA -->
+  <a href="Laptop Hp I7 10va.html">
+    <img src="laptop/Laptop Hp I7 10va/lap1.webp" alt="Laptop" class="card-img">
+  </a>
+
+  <!-- CONTENEDOR DERECHO -->
+  <div class="card-info"> 
+
+    <a 
+      href="https://wa.me/526621838339?text=Hola,%20estoy%20interesado%20Laptop Hp I7 10va." 
+      target="_blank" 
+      class="btn-whatsapp-top">
+      Comprar ahora
+    </a>
+
+    <p class="descripcion-corta">Laptop Hp core I7 10va — Memoria Ram 16GB — Ssd 256 gb — Windows 11 Home </p>
+
+    <p class="precio-rojo">$4,600</p>
+
+  </div>
+
+</div>
+
+<div class="nuevo-card fade-scroll">        
+
+  <!-- IMAGEN IZQUIERDA -->
+  <a href="Laptop Dell Inspiron 3593 Core I3 10va.html">
+    <img src="laptop/Laptop Dell Inspiron 3593 Core I3 10va/lap1.webp" alt="Laptop" class="card-img">
+  </a>
+
+  <!-- CONTENEDOR DERECHO -->
+  <div class="card-info"> 
+
+    <a 
+      href="https://wa.me/526621838339?text=Hola,%20estoy%20interesado%20Laptop Dell Inspiron 3593 Core I3 10va." 
+      target="_blank" 
+      class="btn-whatsapp-top">
+      Comprar ahora
+    </a>
+
+    <p class="descripcion-corta">Laptop Dell 3593 core I3 10va — Memoria Ram 8gb — Ssd 256 + Hdd 1tb — Touch — Windows 11 Home </p>
+
+    <p class="precio-rojo">$3,800</p>
+
+  </div>
+
+</div>
+
+<div class="nuevo-card fade-scroll">        
+
+  <!-- IMAGEN IZQUIERDA -->
+  <a href="Laptop Thinkpad E14 Ryzen 5 5500u.html">
+    <img src="laptop/Laptop Thinkpad E14 Ryzen 5 5500u/lap1.webp" alt="Laptop" class="card-img">
+  </a>
+
+  <!-- CONTENEDOR DERECHO -->
+  <div class="card-info"> 
+
+    <a 
+      href="https://wa.me/526621838339?text=Hola,%20estoy%20interesado%20Laptop Thinkpad E14 Ryzen 5 5500u." 
+      target="_blank" 
+      class="btn-whatsapp-top">
+      Comprar ahora
+    </a>
+
+    <p class="descripcion-corta">Laptop Thinkpad E14 Ryzen 5 5500u — Memoria Ram 16gb — Ssd NVMe 256 gb — Windows 11 Pro </p>
+
+    <p class="precio-rojo">$5,800</p>
+
+  </div>
+
+</div>
+
+
+    <div class="nuevo-card fade-scroll">        
+
+  <!-- IMAGEN IZQUIERDA -->
+  <a href="Laptop Dell Latitude 5410 Core I5 10va.html">
+    <img src="laptop/Laptop Dell Latitude 5410 Core I5 10va/lap1.webp" alt="Laptop" class="card-img">
+  </a>
+
+  <!-- CONTENEDOR DERECHO -->
+  <div class="card-info"> 
+
+    <a 
+      href="https://wa.me/526621838339?text=Hola,%20estoy%20interesado%20Laptop Dell Latitude 5410 Core I5 10va." 
+      target="_blank" 
+      class="btn-whatsapp-top">
+      Comprar ahora
+    </a>
+
+    <p class="descripcion-corta">Laptop Dell Latitude 5410 Core I5 10va — Memoria Ram 8gb — Ssd NVMe 256 gb — Windows 11 Pro </p>
+
+    <p class="precio-rojo">$3,600</p>
+
+  
+
+</div>
+
+</section>
+
+
+
+ <section class="productos">
+
+  <div class="titulo-seccion ocultable">
+
+  <svg class="icono-cat" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <rect x="4" y="3" width="16" height="12" rx="2"/>
+    <path d="M8 21h8M12 15v6"/>
+  </svg>
+
+  <span>COMPUTADORAS DE ESCRITORIO</span>
+
+</div>
+  
+  <div class="product-gallery">
+
+    <div class="nuevo-card fade-scroll">        
+
+  <!-- IMAGEN IZQUIERDA -->
+  <a href="Computadora Dell Inspiron 3668 I3 7th.html">
+    <img src="escritorio/Computadora Dell Inspiron 3668 I3 7th/comp1.webp" alt="Computadora" class="card-img">
+  </a>
+
+  <!-- CONTENEDOR DERECHO -->
+  <div class="card-info"> 
+
+    <a 
+      href="https://wa.me/526621838339?text=Hola,%20estoy%20interesado%20Computadora Dell Inspiron 3668 I3 7th." 
+      target="_blank" 
+      class="btn-whatsapp-top">
+      No Disponible
+    </a>
+
+    <p class="descripcion-corta">Computadora dell de Escritorio Inspiron 3668 core I3 7th — Memoria Ram 8gb — Ssd 512gb — Windows 10 Pro </p>
+
+    <p class="precio-rojo">$2,100</p>
+
+  </div>
+
+</div>
+
+    <div class="nuevo-card fade-scroll">        
+
+  <!-- IMAGEN IZQUIERDA -->
+  <a href="Computadora Dell Optiplex 990 I3 2th.html">
+    <img src="escritorio/Computadora Dell Optiplex 990 I3 2th/comp1.webp" alt="Computadora" class="card-img">
+  </a>
+
+  <!-- CONTENEDOR DERECHO -->
+  <div class="card-info"> 
+
+    <a 
+      href="https://wa.me/526621838339?text=Hola,%20estoy%20interesado%20Computadora Dell Optiplex 990 Core I3 2th." 
+      target="_blank" 
+      class="btn-whatsapp-top">
+      No Disponible
+    </a>
+
+    <p class="descripcion-corta">Computadora dell de escritorio Optiplex 990 Core I3 2th — Memoria Ram 4gb — Ssd 512gb — Windows 10 Pro</p>
+
+    <p class="precio-rojo">$1,500</p>
+
+  </div>
+
+</div>
+
+    <div class="nuevo-card fade-scroll">        
+
+  <!-- IMAGEN IZQUIERDA -->
+  <a href="Computadora Cpu Dell Optiplex 73010 I5 3th.html">
+    <img src="escritorio/Computadora Cpu Dell Optiplex 73010 I5 3th/comp1.webp" alt="Computadora" class="card-img">
+  </a>
+
+  <!-- CONTENEDOR DERECHO -->
+  <div class="card-info"> 
+
+    <a 
+      href="https://wa.me/526621838339?text=Hola,%20estoy%20interesado%20Computadora Cpu Dell Optiplex 73010 I5 3th." 
+      target="_blank" 
+      class="btn-whatsapp-top">
+      No Disponible
+    </a>
+
+    <p class="descripcion-corta">Computadora Dell de Escritorio Optiplex 73010 core I5 3th — Memoria Ram 8gb — Ssd 512gb — Windows 10 Pro</p>
+
+    <p class="precio-rojo">$1,500</p>  
+
+  </div>
+
+  </div> <!-- ✔ Cierre correcto del grid -->
+
+</section> <!-- ✔ Cierre correcto de sección de productos -->
+
+
+
+<section class="productos">
+
+  <div class="titulo-seccion ocultable">
+
+  <svg class="icono-cat" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <rect x="3" y="4" width="18" height="14" rx="2"/>
+    <path d="M12 18v3M8 21h8"/>
+  </svg>
+
+  <span>ALL IN ONE</span>
+
+</div>
+  
+  <div class="product-gallery">
+
+    <div class="nuevo-card fade-scroll">        
+
+  <!-- IMAGEN IZQUIERDA -->
+  <a href="All In One Hp Intel Celeron G4900t.html">
+    <img src="escritorio/All In One Hp Intel Celeron G4900t/comp1.jpg" alt="Computadora" class="card-img">
+  </a>
+
+  <!-- CONTENEDOR DERECHO -->
+  <div class="card-info"> 
+
+    <a 
+      href="https://wa.me/526621838339?text=Hola,%20estoy%20interesado%20All In One Hp Intel Celeron G4900t." 
+      target="_blank" 
+      class="btn-whatsapp-top">
+      No Disponible
+    </a>
+
+    <p class="descripcion-corta">All In One Todo en Uno Hp Intel Celeron G4900t — Memoria Ram 8gb — Ssd 512gb — Windows 10 Home</p>
+
+    <p class="precio-rojo">$2,900</p>
+
+  </div>
+
+</div>
+
+    
+
+    <div class="nuevo-card fade-scroll">        
+
+  <!-- IMAGEN IZQUIERDA -->
+  <a href="All In One Hp Intel Celeron G4900t.html">
+    <img src="escritorio/All In One Hp Intel Celeron G4900t/comp1.jpg" alt="Computadora" class="card-img">
+  </a>
+
+  <!-- CONTENEDOR DERECHO -->
+  <div class="card-info"> 
+
+    <a 
+      href="https://wa.me/526621838339?text=Hola,%20estoy%20interesado%20All In One Hp Intel Celeron G4900t." 
+      target="_blank" 
+      class="btn-whatsapp-top">
+      No Disponible
+    </a>
+
+    <p class="descripcion-corta">All In One Todo en Uno Hp Intel Celeron G4900t — Memoria Ram 8gb — Ssd 512gb — Windows 10 Home</p>
+
+    <p class="precio-rojo">$2,900</p>
+
+  </div>
+
+
+
+  </div> <!-- ✔ Cierre correcto del grid -->
+
+</section> <!-- ✔ Cierre correcto de sección de productos -->
+
+    
+    <!-- ===== Promoción ===== -->
   <section class="promo">
-    <p class="promo-text">
-      Equipos de cómputo de Gama baja, media y alta a precios increíbles !!!
-    </p>
-  </section>
-
-  <!-- Carrusel -->
-  <section class="ctc-carousel">
-    <div class="ctc-viewport">
-      <div class="ctc-track">
-        <!-- Slide 1 -->
-        <div class="ctc-slide">
-          <div class="ctc-card"><img src="img/card1.jpg" alt="Monitores"></div>
-          <div class="ctc-card"><img src="img/card2.jpg" alt="Laptops"></div>
-          <div class="ctc-card"><img src="img/card3.jpg" alt="CPU"></div>
-        </div>
-        <!-- Slide 2 -->
-        <div class="ctc-slide">
-          <div class="ctc-card"><img src="img/card4.webp" alt="Computadora completa"></div>
-          <div class="ctc-card"><img src="img/card5.webp" alt="All in One"></div>
-          <div class="ctc-card"><img src="img/card6.webp" alt="Disco SSD"></div>
-        </div>
-        <!-- Clones -->
-        <div class="ctc-slide">
-          <div class="ctc-card"><img src="img/card1.jpg" alt="Monitores"></div>
-          <div class="ctc-card"><img src="img/card2.jpg" alt="Laptops"></div>
-          <div class="ctc-card"><img src="img/card3.jpg" alt="CPU"></div>
-        </div>
-        <div class="ctc-slide">
-          <div class="ctc-card"><img src="img/card4.webp" alt="Computadora completa"></div>
-          <div class="ctc-card"><img src="img/card5.webp" alt="All in One"></div>
-          <div class="ctc-card"><img src="img/card6.webp" alt="Disco SSD"></div>
-        </div>
-      </div>
+    <div class="promo-content">
+      <i class="fas fa-store promo-icon"></i>
+      <p class="promo-text">¡También puedes comprar nuestros productos desde Mercado Libre!</p>
+      <p>Échale un vistazo a nuestros equipos dando clic en el logo 👇</p>
     </div>
   </section>
 
-  <section class="promo">
-    <p class="promo-text">
-      Manejamos las mejores marcas del mercado
-    </p>
-  </section>
-
-    <!-- Imagen de marcas -->
-    <div class="brands">
-      <img src="img/marcas.jpg" alt="Marcas de laptops" class="brands-img">
+    <!-- ===== LOGO MERCADO LIBRE ===== -->
+    <div class="ml-center">
+      <a class="ml-link"
+         href="https://listado.mercadolibre.com.mx/_CustId_68267553"
+         target="_blank" rel="noopener noreferrer">
+        <img src="img/mercado-libre-logo.png" alt="Mercado Libre">
+      </a>
     </div>
+
+    
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="main-footer">
+      <p>© 2025 Computechh - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- ===== WhatsApp flotante ===== -->
+  <div class="whatsapp-float">
+  <a href="https://wa.me/526621838339?text=Hola%20Computechh,%20quiero%20información." target="_blank" rel="noopener">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+
+<!-- ===== efecto en las tarjetas ===== -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".fade-scroll");
+
+  function updateActiveCard() {
+    let closestCard = null;
+    let closestDistance = Infinity;
+
+    cards.forEach(card => {
+      const rect = card.getBoundingClientRect();
+      const cardCenter = rect.top + rect.height / 2;
+      const screenCenter = window.innerHeight / 2;
+
+      const distance = Math.abs(cardCenter - screenCenter);
+
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closestCard = card;
+      }
+    });
+
+    // Reset todas
+    cards.forEach(card => card.classList.remove("show"));
+
+    // Activa solo la tarjeta que esté más al centro
+    if (closestCard) {
+      closestCard.classList.add("show");
+    }
+  }
+
+  // Ejecutar en scroll + al cargar
+  window.addEventListener("scroll", updateActiveCard);
+  window.addEventListener("resize", updateActiveCard);
+  updateActiveCard();
+});
+</script>
+
+
+<!-- ===== ocultar top bar y nav bar ===== -->
+<script>
+let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+
+  const currentScroll = window.pageYOffset;
+  const topbar = document.getElementById("topbar");
+  const navbar = document.getElementById("navbar");
+
+  // Evitar errores al estar arriba del todo
+  if (currentScroll <= 0) {
+    topbar.classList.remove("hide-bar");
+    navbar.classList.remove("hide-bar");
+    lastScroll = 0;
+    return;
+  }
+
+  // Desplazamiento hacia abajo → ocultar
+  if (currentScroll > lastScroll && currentScroll > 80) {
+    topbar.classList.add("hide-bar");
+    navbar.classList.add("hide-bar");
+  }
+
+    lastScroll = currentScroll;
+});
+</script>
+
+
+        
+    <!-- ===== SCRIPTS ===== -->
+  <script src="script.js"></script>
   
 
 </body>
